@@ -1,4 +1,4 @@
-package org.heike233.touhou_little_maid_irons_spells_n_spellbooks.comm.item;
+package org.heike233.opencurios.item;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -11,7 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.client.gui.provider.CuriosMenuProvider;
+import org.heike233.opencurios.gui.provider.CuriosMenuProvider;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
@@ -27,7 +27,7 @@ public class OpenCuriosItem extends Item {
     private static final Map<UUID, UUID> openLivingEntities = new ConcurrentHashMap<>();
     @Override
     public void appendHoverText(@NotNull ItemStack stack, @Nullable Level world, @NotNull List<Component> tooltip, @NotNull TooltipFlag flag) {
-        tooltip.add(Component.translatable("item.touhou_little_maid_irons_spells_n_spellbooks.open_curios_item.desc").withStyle(ChatFormatting.GRAY));
+        tooltip.add(Component.translatable("open_curios_item.desc").withStyle(ChatFormatting.GRAY));
     }
     @Override
     public @NotNull InteractionResult interactLivingEntity(@NotNull ItemStack stack, @NotNull Player user, @NotNull LivingEntity target, @NotNull InteractionHand hand) {

@@ -1,17 +1,17 @@
-package org.heike233.touhou_little_maid_irons_spells_n_spellbooks.network;
+package org.heike233.opencurios.network;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.simple.SimpleChannel;
-import net.minecraft.resources.ResourceLocation;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.Touhou_little_maid_irons_spells_n_spellbooks;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.network.packet.CuriosPagePacket;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.network.packet.SyncCuriosPagePacket;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.network.packet.SyncLivingEntityCuriosPacket;
+import org.heike233.opencurios.Opencurios;
+import org.heike233.opencurios.network.packet.CuriosPagePacket;
+import org.heike233.opencurios.network.packet.SyncCuriosPagePacket;
+import org.heike233.opencurios.network.packet.SyncLivingEntityCuriosPacket;
 
 public class PacketHandler {
     public static final String PROTOCOL_VERSION = "1";
     public static final SimpleChannel INSTANCE = NetworkRegistry.newSimpleChannel(
-            new ResourceLocation(Touhou_little_maid_irons_spells_n_spellbooks.MODID, "main"),
+            new ResourceLocation(Opencurios.MODID, "main"),
             () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals
     );
 

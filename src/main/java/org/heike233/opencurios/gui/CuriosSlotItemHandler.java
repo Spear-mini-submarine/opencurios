@@ -1,4 +1,4 @@
-package org.heike233.touhou_little_maid_irons_spells_n_spellbooks.client.gui;
+package org.heike233.opencurios.gui;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.Slot;

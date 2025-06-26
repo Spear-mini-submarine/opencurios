@@ -1,21 +1,21 @@
-package org.heike233.touhou_little_maid_irons_spells_n_spellbooks.client.gui.screen;
+package org.heike233.opencurios.gui.screen;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.Touhou_little_maid_irons_spells_n_spellbooks;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.client.gui.CuriosSlotItemHandler;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.client.gui.menu.CuriosMenu;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.network.PacketHandler;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.network.packet.CuriosPagePacket;
+import org.heike233.opencurios.Opencurios;
+import org.heike233.opencurios.gui.CuriosSlotItemHandler;
+import org.heike233.opencurios.gui.menu.CuriosMenu;
+import org.heike233.opencurios.network.PacketHandler;
+import org.heike233.opencurios.network.packet.CuriosPagePacket;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
 public class CuriosScreen extends AbstractContainerScreen<CuriosMenu> {
-    private static final ResourceLocation SPRITE = new ResourceLocation(Touhou_little_maid_irons_spells_n_spellbooks.MODID, "textures/gui/inventory.png");
+    private static final ResourceLocation SPRITE = new ResourceLocation(Opencurios.MODID, "textures/gui/inventory.png");
 
     public CuriosScreen(CuriosMenu menu, Inventory playerInv, Component title) {
         super(menu, playerInv, title);

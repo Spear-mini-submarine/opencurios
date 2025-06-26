@@ -1,12 +1,12 @@
-package org.heike233.opencurios;
+package org.heike233.opencurios.init;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.Touhou_little_maid_irons_spells_n_spellbooks;
+import org.heike233.opencurios.Opencurios;
 
-@Mod.EventBusSubscriber(modid = Touhou_little_maid_irons_spells_n_spellbooks.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = Opencurios.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class EventBusEvents {
     @SubscribeEvent
     public static void addItemsToCreativeTab(BuildCreativeModeTabContentsEvent event) {

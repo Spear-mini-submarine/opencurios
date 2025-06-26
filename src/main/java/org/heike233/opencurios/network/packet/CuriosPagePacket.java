@@ -1,8 +1,8 @@
-package org.heike233.touhou_little_maid_irons_spells_n_spellbooks.network.packet;
+package org.heike233.opencurios.network.packet;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.client.gui.menu.CuriosMenu;
+import org.heike233.opencurios.gui.menu.CuriosMenu;
 
 import java.util.function.Supplier;
 

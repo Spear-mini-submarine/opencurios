@@ -1,4 +1,4 @@
-package org.heike233.touhou_little_maid_irons_spells_n_spellbooks.network.packet;
+package org.heike233.opencurios.network.packet;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.CompoundTag;

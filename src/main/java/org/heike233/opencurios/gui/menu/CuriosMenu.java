@@ -1,4 +1,4 @@
-package org.heike233.touhou_little_maid_irons_spells_n_spellbooks.client.gui.menu;
+package org.heike233.opencurios.gui.menu;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;
@@ -13,12 +13,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.network.PacketDistributor;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.client.gui.CuriosSlotItemHandler;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.comm.Menus;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.comm.item.OpenCuriosItem;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.network.PacketHandler;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.network.packet.SyncCuriosPagePacket;
-import org.heike233.touhou_little_maid_irons_spells_n_spellbooks.network.packet.SyncLivingEntityCuriosPacket;
+import org.heike233.opencurios.gui.CuriosSlotItemHandler;
+import org.heike233.opencurios.init.Menus;
+import org.heike233.opencurios.item.OpenCuriosItem;
+import org.heike233.opencurios.network.PacketHandler;
+import org.heike233.opencurios.network.packet.SyncCuriosPagePacket;
+import org.heike233.opencurios.network.packet.SyncLivingEntityCuriosPacket;
 import org.jetbrains.annotations.NotNull;
 import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.type.capability.ICuriosItemHandler;
